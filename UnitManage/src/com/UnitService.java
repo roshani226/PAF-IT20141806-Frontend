@@ -60,3 +60,12 @@ public class UnitService {
 	 String output = UnitObj.deleteUnit(id);
 	return output;
 	}
+
+
+	@GET
+	@Path("/Update")
+	@Produces(MediaType.TEXT_HTML)
+	public String viewUnit(@QueryParam("id") String id) {
+		return UnitObj.viewUnit(id);
+	}
+}
